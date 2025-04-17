@@ -1,9 +1,9 @@
-const cors = require("cors");
-app.use(cors());
-
 const express = require("express");
 const fs = require("fs");
 const app = express();
+
+const cors = require("cors");
+app.use(cors());
 
 const data = JSON.parse(fs.readFileSync("taiwan_postal_api_data.json", "utf8"));
 
